@@ -81,9 +81,14 @@ The API will be available at:
 
 # 🧪 Example Payload
 ```bash
-├── frontend/               # Vue 3 frontend with Chart.js
-│   └── App.vue             # Main dashboard page
-├── backend/                # FastAPI backend
-│   └── main.py             # API and DB logic
-└── events.db               # SQLite database (created at runtime)
+{
+  "installation_id": "abc123",
+  "event_type": "click",
+  "timestamp": "2025-05-19T12:00:00Z",
+  "details": {
+    "page": "home",
+    "button": "subscribe"
+  }
+}
+
 ```
